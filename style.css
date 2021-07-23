@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(103, 8, 245);
+    font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+    color: rgb(9, 214, 241);
+    margin: 19px 0;
+    font-size: 3rem;
+    border-bottom: 2px solid rgb(9, 214, 241);
+    text-align: center;
+}
+
+.busca {
+    display: flex;
+    width: 300px;
+    
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: rgb(6, 163, 184);
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: rgb(99, 202, 250);
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border:1px solid #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px   rgb(231, 231, 231) ;
+}
+
+.titulo {
+    width: 100%;
+    color: rgb(0, 227, 235);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF;
+    
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: rgb(19, 215, 241);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: rgb(52, 52, 58);
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(16, 167, 194);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: rgb(16, 167, 194);
+    transform-origin: left;
+}
+
+.description {
+   
+    color:rgb(0, 0, 0) ;
+    font-size: 18px;
+    padding: 10px 15;
+}
+
+.aviso {
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: rgb(135, 241, 241);
+    font-size: 13px;
+}
+
+/* squares */
+body {
+    overflow: hidden;
+  }
+  .squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 1s infinite alternate;
+    z-index:-1;
+
+  }
+  
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-800px) rotate(960deg);
+    }
+  }
