@@ -1,2 +1,2 @@
 # Clima
-Verifica a condição climatica em tempo real via consulta a ApiRest
+Verifica a condição climatica em tempo real via consulta a ApiRest (openweathermap.org)
