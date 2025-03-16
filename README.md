@@ -1,2 +1,2 @@
 # Clima
-Verifica a condição do tempo atual na cidade escolhida
+Verifica a condição climatica em tempo real via consulta a ApiRest
